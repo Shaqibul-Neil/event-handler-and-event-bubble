@@ -189,20 +189,55 @@ btnAdd.addEventListener("click", function () {
 //}
 
 //random order
-const parent = document.getElementById("parent");
-const form = document.getElementById("form");
-const button = document.getElementById("button");
+// const parent = document.getElementById("parent");
+// const form = document.getElementById("form");
+// const button = document.getElementById("button");
 
-//form>btn>div
+//form>btn>div --form theke capture hoe btn e dn bubble hoe div e
 // parent.addEventListener("click", listener);
 // form.addEventListener("click", listener, true);
 // button.addEventListener("click", listener);
 
-//div>btn>form
-parent.addEventListener("click", listener, true);
-form.addEventListener("click", listener);
-button.addEventListener("click", listener);
+// //div>btn>form
+// // parent.addEventListener("click", listener, true);
+// // form.addEventListener("click", listener);
+// // button.addEventListener("click", listener);
 
-function listener(event) {
-  console.log(event.currentTarget);
-}
+// function listener(event) {
+//   console.log(event.currentTarget, event.eventPhase);
+// }
+
+//3rd parameter other values
+// capture: false,       // capture phase (default false)
+//   once: true,           // listener একবার চলার পর remove হয়ে যাবে
+//   passive: true,        // scroll/drag ইভেন্টে performance বাড়ায়, preventDefault() কাজ করবে না
+//   signal: abortController.signal // event listener cancel করতে পারে
+
+// const controller = new AbortController();
+// parent.addEventListener("click", listener, {
+//   once: true,
+//   capture: true,
+//   //passive: true,
+//   //signal: controller.signal,
+// });
+// form.addEventListener("click", listener, {
+//   once: true,
+//   capture: true,
+//   //passive: true,
+//   //signal: controller.signal,
+// });
+// button.addEventListener("click", listener, {
+//   once: true,
+//   capture: true,
+//   //passive: true,
+//   //signal: controller.signal,
+// });
+// // পরে চাইলে cancel করতে পারি
+// //controller.abort(); //eta dile kono event e hbena
+
+// function listener(event) {
+//   console.log(event.currentTarget, event.eventPhase);
+// }
+
+// *****************************************************
+// lws --- Mastering JavaScript Event Delegation
