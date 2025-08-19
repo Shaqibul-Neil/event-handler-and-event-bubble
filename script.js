@@ -132,3 +132,19 @@ btnAdd.addEventListener("click", function () {
   ol.appendChild(li);
 });
 */
+
+// lws --- Mastering JavaScript Event Propagation - Bubbling vs. Capturing Explained
+const parent = document.getElementById("parent");
+const form = document.getElementById("form");
+const button = document.getElementById("button");
+
+parent.addEventListener("click", listener);
+
+form.addEventListener("click", listener);
+
+button.addEventListener("click", listener);
+
+//3br e button asbe jdi btn e click kri
+function listener(event) {
+  console.log(event.target);
+}

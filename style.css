@@ -1,0 +1,64 @@
+/* .comment {
+        border: 2px solid blue;
+        padding: 10px;
+        margin-bottom: 15px;
+        background-color: aqua;
+      }
+      .input-delete {
+        width: 250px;
+      }
+      body {
+        border: 2px solid red;
+        margin: 12px;
+        padding: 10px;
+      }
+      section {
+        border: 2px solid green;
+        margin: 12px;
+        padding: 10px;
+      }
+      ol {
+        border: 2px solid purple;
+        margin: 12px;
+        padding: 10px;
+      }
+      li {
+        border: 2px solid blue;
+        margin: 12px;
+        padding: 10px;
+      } */
+* {
+  font-family: "Anek Bangla", sans-serif;
+  color: whitesmoke;
+  background-color: #212121;
+}
+
+.container {
+  margin: 50px;
+}
+
+h1 {
+  border-bottom: 1px solid gray;
+}
+
+.parent {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+}
+
+form {
+  padding: 20px;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+button {
+  background-color: antiquewhite;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  padding: 6px 12px;
+  box-shadow: 4px 4px #000000;
+  font-size: 20px;
+  color: #333333;
+}

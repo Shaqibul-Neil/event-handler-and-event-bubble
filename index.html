@@ -3,38 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Event Handler and Event Bubble with Propagation</title>
-    <style>
-      /* .comment {
-        border: 2px solid blue;
-        padding: 10px;
-        margin-bottom: 15px;
-        background-color: aqua;
-      }
-      .input-delete {
-        width: 250px;
-      }
-      body {
-        border: 2px solid red;
-        margin: 12px;
-        padding: 10px;
-      }
-      section {
-        border: 2px solid green;
-        margin: 12px;
-        padding: 10px;
-      }
-      ol {
-        border: 2px solid purple;
-        margin: 12px;
-        padding: 10px;
-      }
-      li {
-        border: 2px solid blue;
-        margin: 12px;
-        padding: 10px;
-      } */
-    </style>
   </head>
   <body>
     <!-- comment box -->
@@ -127,6 +97,16 @@
     <button class="btn-add">Add New Item</button> -->
     <!-- ***************************************************** -->
 
+    <!-- lws --- Mastering JavaScript Event Propagation - Bubbling vs. Capturing Explained -->
+    <div class="container">
+      <h1>ইভেন্ট প্রোপাগেশন কি?</h1>
+
+      <div class="parent" id="parent">
+        <form id="form">
+          <button type="button" id="button">Click here</button>
+        </form>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
