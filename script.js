@@ -134,17 +134,75 @@ btnAdd.addEventListener("click", function () {
 */
 
 // lws --- Mastering JavaScript Event Propagation - Bubbling vs. Capturing Explained
+// const parent = document.getElementById("parent");
+// const form = document.getElementById("form");
+// const button = document.getElementById("button");
+
+//event bubbling
+
+// parent.addEventListener("click", listener);
+
+// form.addEventListener("click", listener);
+
+// button.addEventListener("click", listener);
+
+//3br e button asbe jdi btn e click kri
+// function listener(event) {
+//   console.log(event.target);
+// }
+
+//kothai click hyse dkhte hole. akhn btn click krleo baki 3ta dekhabe btn>form>div ---child theke parent er dike jasse. event bubbling hcche. etai hcche addevent er default behaviour. currentTarget ar this same ekhane
+// function listener(event) {
+//   //console.log(event.currentTarget);
+//   console.log(event.currentTarget.tagName);
+//   //console.log(this);
+//   //console.log(this.tagName); //alwz gives in capital
+// }
+
+//event capturing or trickling
+
+// parent.addEventListener("click", listener, {capture:true});
+
+// form.addEventListener("click", listener, {capture:true});
+
+// button.addEventListener("click", listener, {capture:true});
+
+//OR
+
+// parent.addEventListener("click", listener, true);
+
+// form.addEventListener("click", listener, true);
+
+// button.addEventListener("click", listener, true);
+
+//3br e button asbe jdi btn e click kri
+// function listener(event) {
+//   console.log(event.target);
+// }
+
+// akhn btn click krleo  3ta dekhabe div >form>btn---parent theke child er dike jasse. event capture hcche.
+//function listener(event) {
+//console.log(event.currentTarget);
+//console.log(event.currentTarget.tagName);
+//console.log(this);
+//console.log(this.tagName); //alwz gives in capital
+//}
+
+//random order
 const parent = document.getElementById("parent");
 const form = document.getElementById("form");
 const button = document.getElementById("button");
 
-parent.addEventListener("click", listener);
+//form>btn>div
+// parent.addEventListener("click", listener);
+// form.addEventListener("click", listener, true);
+// button.addEventListener("click", listener);
 
+//div>btn>form
+parent.addEventListener("click", listener, true);
 form.addEventListener("click", listener);
-
 button.addEventListener("click", listener);
 
-//3br e button asbe jdi btn e click kri
 function listener(event) {
-  console.log(event.target);
+  console.log(event.currentTarget);
 }
