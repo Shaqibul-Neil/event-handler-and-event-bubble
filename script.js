@@ -241,3 +241,25 @@ btnAdd.addEventListener("click", function () {
 
 // *****************************************************
 // lws --- Mastering JavaScript Event Delegation
+// const list = document.querySelector("#list");
+// const btnElementAdd = document.querySelector(".btn-element-add");
+
+// btnElementAdd.addEventListener("click", function () {
+//   //creating a new child element
+//   const newItem = document.createElement("li");
+//   newItem.innerText = `New Language`;
+//   list.appendChild(newItem);
+// });
+
+// list.addEventListener("click", function (e) {
+//   console.log(e.target); //element কে HTML হিসেবে দেখায়
+//   console.dir(e.target); //element কে JS object হিসেবে দেখায়
+//   if (e.target.matches("li")) {
+//     if (e.target.innerText === "জাভাস্ক্রিপ্ট") {
+//       e.target.style.backgroundColor = "red";
+//     } else {
+//       e.target.style.backgroundColor = "yellow";
+//     }
+//   }
+//   // if (e.target.matches("li")) list.removeChild(e.target);
+// });
