@@ -263,3 +263,5 @@ btnAdd.addEventListener("click", function () {
 //   }
 //   // if (e.target.matches("li")) list.removeChild(e.target);
 // });
+
+//Execution Context - How JavaScript runs your code
