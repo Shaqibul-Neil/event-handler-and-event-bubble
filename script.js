@@ -265,3 +265,23 @@ btnAdd.addEventListener("click", function () {
 // });
 
 //Execution Context - How JavaScript runs your code
+//closure
+// let sum = 0;
+// function doSum(a) {
+//   return function (b) {
+//     return a + b;
+//   };
+// }
+// let temp = doSum(2);
+// console.log(temp);
+// sum = sum + temp(8);
+// console.log(sum);
+/*doSum(2) কল করলে
+doSum ফাংশন a = 2 নিয়ে একটা নতুন ফাংশন রিটার্ন করছে।
+মানে temp এর ভ্যালু হলো 👉
+function (b) {
+  return 2 + b;
+}
+তাই temp আসলে variable না, function reference।
+JavaScript এ function হলো first-class citizen → মানে function কে ভ্যারিয়েবলে রাখা যায়, argument হিসেবে পাঠানো যায়, return করা যায়।
+ */
